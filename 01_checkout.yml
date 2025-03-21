@@ -17,3 +17,7 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
+
+# checkout  refers to pulling a specific version of the code
+# When a workflow starts, GitHub Actions automatically clones the repository
+# to the runner machine. The actions/checkout step ensures that the workflow works with the code in the correct state (branch, tag, or commit).
