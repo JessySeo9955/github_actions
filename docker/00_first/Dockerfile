@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 # Copies your code file from your action repository to the filesystem path '/' of the container
-COPY docker/00_first/entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 
 # Make the script executable
 RUN chmod +x entrypoint.sh
