@@ -10,7 +10,7 @@ jobs:
 
             - name: Run my own container actions
               id: action
-              uses: /docker/00_first/
+              uses: ./docker/00_first
               with:
                 who-to-greet: '@Jihee Seo'
 
